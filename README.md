@@ -41,6 +41,6 @@ TODO
   * **【二】名词解释**
     * [Pods](ops/k8s/term/pods.md)
   * **【三】部署**
-    
+    * [集群快速部署](ops/k8s/deploy/cluster.md)
 
 ## Docker
