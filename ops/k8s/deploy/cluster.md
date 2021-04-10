@@ -132,7 +132,7 @@
     sudo docker pull kubernetesui/dashboard:v2.2.0
     sudo docker pull kubernetesui/metrics-scraper:v1.0.6
 
-  复制[dashboard.yaml](./dashboard.yaml)文件内容，在master节点上执行`kubectl apply -f dashboard.yaml`。
+  复制[dashboard.yaml](https://github.com/pengyejun/pyj_blog/blob/master/ops/k8s/deploy/dashboard.yaml)文件内容，在master节点上执行`kubectl apply -f dashboard.yaml`。
 
 ### 10.1 创建用户与角色
   k8s 的风格就是 “用 yaml 说话”。所以我们需要编写 user.yaml，用来创建用户；编写 role.yaml，用来给用户赋予角色。
@@ -183,7 +183,7 @@
       },
       "code": 403
     }
-  报错403，说明有权限问题，这是因为最新版的k8s默认启用了RBAC，并为未认证用户赋予了一个默认的身份：`anonymous`。
+  报错403，说明有权限问题，这是因为最新版的k8s默认启用了[RBAC](https://zhuanlan.zhihu.com/p/63769951)，并为未认证用户赋予了一个默认的身份：`anonymous`。
 
   对于API Server来说，它是使用证书进行认证的，而我们浏览器上没有这个证书，所以我们要为浏览器配置https证书。
 
