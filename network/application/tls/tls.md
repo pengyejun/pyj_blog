@@ -17,7 +17,7 @@
 
 
 ### TLS报文交互的流程是什么？
-我们通过Wireshark抓包来观察`curl www.baidu.com`的过程中，都有哪些数据包的交互。
+我们通过Wireshark抓包来观察`curl https://www.baidu.com`的过程中，都有哪些数据包的交互。
 
 ![tls](./tls.png)
 
