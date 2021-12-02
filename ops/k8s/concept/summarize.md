@@ -28,26 +28,16 @@ Kubernetes是容器集群管理系统，是一个开源的平台，可以实现�
 ### 2.2 使用Kubernetes能做什么？
 
 可以在物理或虚拟机的Kubernetes集群上运行容器化应用，Kubernetes能提供一个以`容器为中心的基础架构`，满足在生产环境中运行应用的一些常见需求，如：
-- [多个进程（作为容器运行）协同工作。（Pod）]()
+- [多个进程（作为容器运行）协同工作。（Pod）](../terms/pods.md)
+- 跨节点容器(pod)间通信
 - 存储系统挂载
-- Distributing secrets？
 - 应用健康检测
-- [应用实例的复制]()
-- Pod自动伸缩/扩展
-- 服务发现？
-- 负载均衡
-- 滚动更新
+- [应用实例的复制](../terms/deployment.md)
+- [Pod自动伸缩/扩展](../terms/deployment.md)
+- [服务发现](../terms/service.md)
+- [负载均衡]((../terms/service.md))
+- [滚动更新]((../terms/deployment.md))
 - 资源监控
 - 日志访问
 - 调试应用程序
-- [提供认证和授权]()
-
-### 2.3 Kubernetes不是什么？
-Kubernetes并不是传统的[PaaS（平台即服务）](http://www.ruanyifeng.com/blog/2017/07/iaas-paas-saas.html)系统。
-
-- Kubernetes不限制支持应用的类型，不限制应用框架。不限制受支持的语言，只要应用能在容器里运行，那么就能很好的运行在Kubernetes上。
-- Kubernetes不提供中间件、数据库等服务，但这些应用都可以运行在Kubernetes上。
-
-由于Kubernetes运行在应用级别而不是硬件级，因此提供了普通的Paas平台提供的一些通用功能，比如部署，扩展，负载均衡，日志，监控等。这些默认功能是可选的。
-
-另外，Kubernetes不仅仅是一个“编排系统”；它消除了编排的需要。“编排”的定义是指执行一个预定的工作流：先执行A，之B，然C。相反，Kubernetes由一组独立的可组合控制进程组成。怎么样从A到C并不重要，达到目的就好。当然集中控制也是必不可少，方法更像排舞的过程。这使得系统更加易用、强大、弹性和可扩展。
+- 提供认证和授权

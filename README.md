@@ -50,10 +50,12 @@ TODO
   
   * **【一】基础概念**
     * [概述](ops/k8s/concept/summarize.md)
-    * [设计架构](ops/k8s/concept/framework.md)
-    * [设计理念](ops/k8s/concept/design.md)
+    * [架构与组件工具](ops/k8s/concept/component.md)
   * **【二】名词解释**
-    * [Pods](ops/k8s/term/pods.md)
+    * [Pods](ops/k8s/terms/pods.md)
+    * [Deployment](ops/k8s/terms/deployment.md)
+    * [Service](ops/k8s/terms/service.md)
+    * [Volumn](ops/k8s/terms/volumn.md)
   * **【三】部署**
     * [集群快速部署](ops/k8s/deploy/cluster.md)
 

@@ -60,7 +60,7 @@
 ## 7.初始化集群
   命令如下：
     
-    sudo kubeadm init --apiserver-advertise-address=10.10.121.122 --pod-network-cidr=192.168.16.0/20
+    sudo kubeadm init --apiserver-advertise-address=10.10.121.122 --pod-network-cidr=10.244.0.0/16
 
   * --apiserver-advertise-address 指定了 master1 的 ip 地址，不同环境对应的值不同。
   * --pod-network-cidr 用于 k8s 中的 pod 通信，如果你不懂什么意思，就跟着我设相同的值。
